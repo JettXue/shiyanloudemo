@@ -1,0 +1,14 @@
+spring:
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+  datasource:
+    url: jdbc:mysql://localhost:3307/lou_springboot
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js跨域测试</title>
+</head>
+<body>
+
+<div>
+
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/1.12.0/jquery.min.js"></script>
+<script !src="">
+    //原生的实现方式
+    let script = document.createElement('script');
+
+    script.src = 'http://www.nealyang.cn/login?username=Nealyang&callback=callback';
+
+    document.body.appendChild(script);
+
+    function callback(res) {
+        console.log(res);
+    }
+</script>
+
+</body>
+</html>
